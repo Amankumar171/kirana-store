@@ -35,9 +35,11 @@ a { color: inherit; text-decoration: none; }
 .section { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
 .section-header { margin-bottom: 20px; }
 .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
-.product-card { background: var(--card); border: 1px solid var(--border); padding: 16px; border-radius: 16px; overflow: hidden; }
-.product-card img { width: 100%; height: 120px; object-fit: cover; border-radius: 12px; margin-bottom: 10px; }
-.product-card button { margin-top: 10px; width: 100%; border: 0; cursor: pointer; }
+.product-card { background: var(--card); border: 1px solid var(--border); padding: 16px; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; gap: 8px; }
+.product-card img { width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 4px; background: #fef3c7; }
+.product-card h3 { margin: 0; }
+.product-card p { margin: 0; color: var(--muted); }
+.product-card button { margin-top: 8px; width: 100%; border: 0; cursor: pointer; }
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
 .gallery-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
 .gallery-card img { width: 100%; height: 170px; object-fit: cover; }

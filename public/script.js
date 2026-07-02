@@ -8,10 +8,10 @@ let cart = [];
 const whatsappNumber = '917234932442';
 
 const imageMap = {
-  atta: '/images/atta.svg',
-  rice: '/images/rice.svg',
-  milk: '/images/milk.svg',
-  eggs: '/images/eggs.svg'
+  atta: '/images/product-atta.svg',
+  rice: '/images/product-rice.svg',
+  milk: '/images/product-milk.svg',
+  eggs: '/images/product-eggs.svg'
 };
 
 function getProductImage(product) {
