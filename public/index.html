@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirana Store | Home Delivery</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">Kirana Daily</div>
+        <a href="#order" class="cta">Order Now</a>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Fresh groceries • Fast home delivery</p>
+          <h1>Everyday essentials delivered to your doorstep.</h1>
+          <p class="hero-copy">From rice and atta to milk and eggs, get your neighborhood store items in minutes.</p>
+          <a href="#products" class="btn primary">Browse Products</a>
+        </div>
+        <div class="hero-visual">
+          <img src="/images/hero.svg" alt="Fresh grocery basket" />
+          <div class="hero-card">
+            <h3>Why customers love us</h3>
+            <ul>
+              <li>Same-day delivery</li>
+              <li>Trusted local vendors</li>
+              <li>Cash on delivery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="products" class="section">
+        <div class="section-header">
+          <h2>Popular items</h2>
+          <p>Fresh stock updated from the store inventory.</p>
+        </div>
+        <div id="product-list" class="product-grid"></div>
+      </section>
+
+      <section class="section gallery-section">
+        <div class="section-header">
+          <h2>Store photos</h2>
+          <p>A glimpse of the fresh products and friendly neighborhood service.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <img src="/images/hero.svg" alt="Fresh vegetables in a kirana store" />
+            <h3>Fresh picks</h3>
+          </div>
+          <div class="gallery-card">
+            <img src="/images/hero.svg" alt="Packed grocery essentials" />
+            <h3>Daily essentials</h3>
+          </div>
+          <div class="gallery-card">
+            <img src="/images/hero.svg" alt="Home delivery rider carrying groceries" />
+            <h3>Fast delivery</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="order" class="section order-section">
+        <div class="section-header">
+          <h2>Book home delivery</h2>
+          <p>Leave your address and we will bring your basket home.</p>
+        </div>
+        <form id="order-form" class="order-form">
+          <input type="text" id="customerName" placeholder="Your name" required />
+          <input type="tel" id="phone" placeholder="Phone number" required />
+          <textarea id="address" placeholder="Delivery address" rows="3" required></textarea>
+          <div id="selected-items" class="selected-items"></div>
+          <button type="submit" class="btn primary">Place Delivery Request</button>
+          <p class="helper-text">A WhatsApp message will open for order alert to 7234932442.</p>
+          <p id="form-message" class="form-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
